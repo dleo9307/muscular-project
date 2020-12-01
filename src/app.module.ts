@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { MuscleModule } from './module/muscle/muscle.module';
 import { DatabaseModule } from './database/database/database.module';
 
 @Module({
@@ -7,6 +8,7 @@ import { DatabaseModule } from './database/database/database.module';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
+    MuscleModule,
     DatabaseModule,
   ],
 })

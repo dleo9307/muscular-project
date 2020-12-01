@@ -25,12 +25,14 @@
     "@nestjs/config": "^0.6.1",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
+    "@nestjs/swagger": "^4.7.5",
     "mariadb": "^2.5.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4",
     "sequelize": "^5.22.3",
-    "sequelize-typescript": "^1.1.0"
+    "sequelize-typescript": "^1.1.0",
+    "swagger-ui-express": "^4.1.5"
   },
   "devDependencies": {
     "@types/sequelize": "^4.28.9",
