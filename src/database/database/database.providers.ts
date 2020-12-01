@@ -1,5 +1,7 @@
 import { Sequelize } from 'sequelize-typescript';
 import { ConfigService } from '@nestjs/config';
+import { Muscle } from '../../module/muscle/muscle.entity';
+import { Exercise } from '../../module/exercise/exercise.entity';
 
 export const databaseProviders: {
   provide: string;
@@ -30,7 +32,7 @@ export const databaseProviders: {
       timezone: 'Asia/Seoul',
       logging: console.log,
     });
-    sequelize.addModels([]);
+    sequelize.addModels([Muscle, Exercise]);
     await sequelize.sync({ alter: true });
     return sequelize;
   },
