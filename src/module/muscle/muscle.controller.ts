@@ -11,7 +11,6 @@ export class MuscleController {
     return this.muscleService.getPage();
   }
 
-  @Get()
   @Post()
   async create(@Body() muscleCreateInput: MuscleCreateInput) {
     return this.muscleService.create(muscleCreateInput);
