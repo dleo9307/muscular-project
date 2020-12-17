@@ -12,6 +12,7 @@ export class MuscleService {
   ) {}
 
   async getPage(): Promise<Muscle[]> {
+    console.log('test');
     return this.muscleRepository.findAll();
   }
 
