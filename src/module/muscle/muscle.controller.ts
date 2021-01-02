@@ -2,7 +2,7 @@ import { Body, Controller, Get, Post } from '@nestjs/common';
 import { MuscleService } from './muscle.service';
 import { MuscleCreateInput } from './dto/muscle.dto';
 
-@Controller('muscles')
+@Controller('muscle ')
 export class MuscleController {
   constructor(private readonly muscleService: MuscleService) {}
 
