@@ -5,7 +5,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app: INestApplication = await NestFactory.create(AppModule);
-
+  app.enableCors();
   const options: any = new DocumentBuilder()
     .setTitle('Muscular API')
     .setDescription('Muscular API Document')
