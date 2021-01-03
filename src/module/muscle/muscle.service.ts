@@ -18,4 +18,8 @@ export class MuscleService {
   async create(input: MuscleCreateInput): Promise<Muscle> {
     return this.muscleRepository.create(input);
   }
+
+  async deleteAll(): Promise<void> {
+    return this.muscleRepository.truncate();
+  }
 }

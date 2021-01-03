@@ -15,4 +15,9 @@ export class MuscleController {
   async create(@Body() muscleCreateInput: MuscleCreateInput) {
     return this.muscleService.create(muscleCreateInput);
   }
+
+  @Post()
+  async deleteAll() {
+    return this.muscleService.deleteAll();
+  }
 }
